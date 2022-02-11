@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import FormInput from './FormInput.vue';
 </script>
 
