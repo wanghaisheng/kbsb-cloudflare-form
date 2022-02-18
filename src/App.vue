@@ -6,15 +6,11 @@ import Nav from './components/Nav.vue';
 </script>
 
 <template>
-  <div>
-    <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
-
-    <div class="container mx-auto px-5">
-      <Nav />
-      <IntroTitle />
-      <Form />
-      <Footer />
-    </div>
+  <div class="container mx-auto px-5">
+    <Nav />
+    <IntroTitle />
+    <Form />
+    <Footer />
   </div>
 </template>
 
@@ -23,5 +19,3 @@ export default {
   name: 'IndexPage',
 };
 </script>
-
-<style></style>
