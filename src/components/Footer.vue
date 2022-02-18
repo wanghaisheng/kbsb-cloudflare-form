@@ -1,5 +1,7 @@
 <template>
-  <footer>Kaboom Shebang</footer>
+  <footer class="flex justify-center py-10">
+    <span>Kaboom Shebang </span>
+  </footer>
 </template>
 
 <script>
