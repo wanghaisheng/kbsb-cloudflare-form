@@ -1,8 +1,14 @@
 <template>
-  <div class="">
-    <label class="block mr-4" :for="id">{{ label }}</label>
+  <div :class="type === 'checkbox' ? 'flex flex-row-reverse items-center' : ''">
+    <label
+      class="block mr-4 mt-4"
+      :class="type === 'checkbox' ? 'mx-0 my-4' : ''"
+      :for="id"
+      >{{ label }}</label
+    >
     <input
-      class="w-80 inline-block bg-gray-300 my-2 p-2"
+      class="block bg-gray-300 my-2 p-2"
+      :class="type === 'checkbox' ? 'mx-2 my-4' : 'w-80'"
       :type="type"
       :id="id"
       :name="id"
