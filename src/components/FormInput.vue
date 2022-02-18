@@ -1,6 +1,8 @@
 <template>
   <div class="">
+    <label class="block mr-4" :for="id">{{ label }}</label>
     <input
+      class="w-80 inline-block bg-gray-300 my-2 p-2"
       :type="type"
       :id="id"
       :name="id"
