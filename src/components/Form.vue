@@ -4,12 +4,21 @@ import FormTextarea from './FormTextarea.vue';
 import FormResponse from './FormResponse.vue';
 import Button from './Button.vue';
 
-function submitForm() {
+const submitForm = async () => {
   console.log('Submitted');
-  // Todo: refactor submit, remove form action
   // https://kbsb-cloudflare-form-worker.kaboom.workers.dev
-  // @submit.prevent="submitForm"
-}
+  const res = await fetch('http://127.0.0.1:8787', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    mode: 'no-cors',
+    body: JSON.stringify({
+      test: 'hello',
+    }),
+  });
+  // const data = await res;
+
+  console.log(res);
+};
 </script>
 
 <script>
@@ -26,8 +35,7 @@ export default {
   <section class="py-10">
     <form
       class="flex flex-col items-center bg-gray-100 py-4"
-      action="https://kbsb-cloudflare-form-worker.kaboom.workers.dev"
-      method="POST"
+      @submit.prevent="submitForm"
     >
       <FormInput
         id="first_name"
