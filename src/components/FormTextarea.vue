@@ -10,8 +10,6 @@
       :required="isRequired"
       :placeholder="placeholder"
       :pattern="pattern"
-      :rows="rows"
-      :cols="cols"
     />
   </div>
 </template>
