@@ -59,6 +59,11 @@ export default {
         :isRequired="true"
       />
       <FormInput
+        id="newsletter"
+        type="checkbox"
+        label="Yes, I would like to stay updated"
+      />
+      <FormInput
         id="phone"
         type="tel"
         label="Phone"
@@ -70,12 +75,6 @@ export default {
         label="Message"
         placeholder="Type your message..."
       />
-      <FormInput
-        id="newsletter"
-        type="checkbox"
-        label="Yes, I would like to stay updated"
-      />
-      <Button text="Send" />
       <div
         class="h-captcha"
         data-sitekey="d34868ed-69b1-4794-9516-5e3f0f802bd0"

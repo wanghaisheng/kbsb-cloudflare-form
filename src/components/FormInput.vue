@@ -1,5 +1,11 @@
 <template>
-  <div :class="type === 'checkbox' ? 'flex flex-row-reverse items-center' : ''">
+  <div
+    :class="
+      type === 'checkbox'
+        ? 'flex flex-row-reverse items-center bg-slate-200'
+        : ''
+    "
+  >
     <label
       class="block mr-4 mt-4"
       :class="type === 'checkbox' ? 'mx-0 my-4' : ''"
